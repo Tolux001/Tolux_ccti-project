@@ -1,0 +1,236 @@
+* {box-sizing: border-box;
+padding: 0px;
+margin: 0px;
+max-width: 100%;
+font-family: Arial,Verdana,"Times New Roman",Courier,"Courier New",Georgia,lucida,tahoma;}
+/*css header start*/
+header {background-color: rgb(135, 248, 135);
+ top: 0;
+padding: 15px;
+max-width: 100%;
+height: 70px;}
+.headicon img {float: left;
+  width: 50px;
+  height: 40px;}
+a {text-decoration: none;}
+ .headlist ul{float: right;
+  padding-top: 10px;}
+.headlist ul li{float: left;
+list-style-type: none;
+padding-right: 20px;
+  font-weight: bold;}
+.headlist ul li a {color:black;}
+.headlist ul li a:hover{color:white;
+border: none;
+text-decoration: none;
+border-bottom: 3px solid white;
+}
+.headlist .linkdiff {color: white;
+background-color: tomato;
+height: auto; 
+font-weight: bold;
+padding: 10px;
+border-radius: 10px;
+transition: 0.4s linear;
+width:50px;}
+.headlist .linkdiff:hover {color: tomato;
+background-color: white;
+height: auto; 
+padding: 10px;
+transition: 0.2s ease;
+width:30px;}
+/*css section start*/
+.done {
+  width: 100%;
+  height: 500px;
+margin-bottom: 500px;
+position: relative;
+}
+.done h1 {font-family:"Tahoma";
+color: rgb(14, 12, 12);
+position: absolute;
+top: 5;
+font-weight: bold;
+letter-spacing: -1px;
+word-spacing: -1px;
+font-size: 50px;
+}
+    /*Styling for the responsive table*/
+    .eji h2 {color: rgb(80 205 80);
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0px;
+    font-size: 20px;}
+      .Carnage {display: flex;
+        max-width: 1200px;
+        width: 100%;
+    padding: 20px}
+     .Carnage .fire table, .air table {margin:20px 0px;
+ width: 400px;
+ border-radius: 3px;
+ padding: 20px 0px;
+ background-color: lightgreen;}
+ .Carnage .water table 
+ {background-color: rgb(80 205 80);
+   color: white;
+    width: 400px;
+    padding: 20px 10px;
+    border-radius: 5px;
+     box-shadow: 2px 2px 4px 2px;}
+   .water {padding-left: 8px;}
+    .air {padding-left: 10px;}
+   tr, td {padding: 10px;
+   font-size: 15px;
+   font-family: Georgia;
+   text-align: center;}
+.water .wrecommend {background-color: white;
+color: green;
+width: 10px;
+margin: 0px 0px 10px 0px;
+padding: 5px 10px;
+box-shadow: 2px 2px 3px 1px black;}
+   .water th {color: white;
+    font-weight: bold;
+      font-size: 25px;}
+      .air th {color: rgb(14, 199, 14);
+    font-weight: bold;
+      font-size: 20px;}
+      .fire th {color: rgb(6, 112, 6);
+    font-weight: bold;
+      font-size: 25px;}
+    .Carnage a { 
+      background-color:rgb(4, 161, 4);
+    color:white ;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-family: Tahoma ;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;}
+ .Carnage table a:hover {background-color:white;
+    color:green;}
+    /* three pictures after the table */
+    .eta {background-color: rgb(255 99 71) ;
+    width: 100%;
+    margin-top:50px;
+    height: 400px;
+    padding:20px;
+    margin-top: 50px;}
+    .eta h2 {color: white;
+    text-align: center;
+    font-family: verdana;
+    font-weight:bold;}
+.example {float: left;
+text-align: center;
+}
+    .example img { border-radius: 60%;
+    border: 2px solid black;
+      width: 150px;
+      height: 150px;
+      margin-top: 50px;
+      margin-left:100px;}
+  .example h3 {margin: 50px 0px 0px 100px;
+    color: white;
+    font-family: "verdana";}
+    
+ .whitecolor {background-color: white;
+      width:100%;
+      height: 250px;}
+/*css footer start*/
+
+footer {background-color: black;
+width: 100%;
+z-index: 40;
+position: fixed;
+ bottom: 0;
+ padding:5px;}
+
+ footer h3 a {
+  text-align: center;
+  justify-content: center;
+color: aquamarine;}
+
+  footer ul {text-align: center;}
+  footer ul li {list-style-type: none;
+  padding-left: 20px;
+  display: inline-block;
+  color: white;}
+  
+  #check{
+  z-index: 3;
+  display: none;
+}
+
+
+@media screen and (max-width:560px) { header .headlist {display: none;}
+  
+  header .fa-regular {display: none;}
+  
+    #check:checked ~ header .headlist{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(114, 205, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #check:checked ~  header .headlist a{
+    font-weight: 700;
+    margin-right: 0;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #check:checked ~ header label .fa-regular{
+    z-index: 2;
+    position: fixed;
+    display: block;
+  }
+
+  #check:checked ~ header label .fa-bars{
+    display: none;
+  }
+  
+  label {position: relative;
+float: right;
+cursor: pointer;
+  color: white;
+  font-size: 40px;}
+  
+  .done {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 300px;
+  }
+  
+  .done h1 {font-size: 20px;}
+  
+  .Carnage {display: flex;
+  overflow: scroll;}
+ 
+.eta {
+  margin-top:50px;
+  height: 1000px;}
+
+.flexp {display: inline-block;}
+  
+footer {max-width:500px;
+display:fixed;
+  bottom: 0;
+}
+ 
+footer ul {
+  text-align: center;
+  padding: 5px 0px;}
+
+footer ul li {display: inline-block;}
+}

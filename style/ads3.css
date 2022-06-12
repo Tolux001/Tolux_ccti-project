@@ -1,0 +1,224 @@
+* {box-sizing: border-box;
+padding: 0px;
+margin: 0px;
+font-family: Arial,Verdana,"Times New Roman",Courier,"Courier New",Georgia,lucida, tahoma,Monospace;}
+body {background-image: url('/images/plans-background.jpg');
+height: 2000px;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;}
+/*css header start*/
+header {background-color: rgb(135, 248, 135);
+margin: 0px;
+padding: 15px;
+max-width: 100%;
+height: 70px;}
+.headicon img {float: left;
+  width: 50px;
+  height: 40px;}
+a {text-decoration: none;}
+ .headlist ul{float: right;
+  padding-top: 10px;}
+.headlist ul li{float: left;
+list-style-type: none;
+padding-right: 20px;
+  font-weight: bold;}
+.headlist ul li a {color:black;}
+.headlist ul li a:hover{color:white;
+border: none;
+text-decoration: none;
+border-bottom: 3px solid white;}
+.headlist .linkdiff {color: white;
+background-color: tomato;
+height: auto; 
+font-weight: bold;
+padding: 10px;
+border-radius: 10px;
+transition: 0.4s linear;
+width:50px;}
+.headlist .linkdiff:hover,visited,after {color: tomato;
+background-color: white;
+height: auto; 
+padding: 10px;
+transition: 0.2s ease;
+width:30px;}
+.mono {background-color: lightgreen;
+border: 2px solid green;
+float:left;
+height: 350px;
+  width: 70%;
+  margin: 20px 0px 10px 0px;
+  padding: 10px;}
+    .mono:hover {background-color: green;
+border: 2px solid lightgreen;
+float:left;
+height: 350px;
+  width: 70%;
+  margin: 20px 0px 10px 0px;
+  padding: 10px;}
+  .tri {background-color: lightgreen;
+  border: 2px solid green;
+  float: left;
+  height: 350px;
+  width:70%;
+  margin:10px 0px;
+  padding:10px;}
+    .tri:hover {background-color: green;
+border: 2px solid lightgreen;
+float:left;
+height: 350px;
+  width: 70%;
+  margin: 10px 0px 10px 0px;
+  padding: 10px;}
+.plusplan h1 { font-family: Tahoma;
+ word-spacing: 5px;
+ margin: 10px 0px;
+ letter-spacing: -1px}
+ .plusplan h1:hover { font-family: Tahoma;
+ word-spacing: 5px;
+ color: white;
+ letter-spacing: -1px}
+ .recommend {background-color: tomato;
+ float: right;
+ padding: 5px;
+ color: white;
+ align-items: center;
+ border-radius: 5px;
+   position: relative;}
+ .recommend:hover {background-color: white;
+ float: right;
+ padding: 5px;
+ color: tomato;
+ align-items: center;
+ border-radius: 5px;}
+ .story {margin: 10px 0px 50px 0px;
+ color: #444;
+   text-align:left;}
+   .box {background-color: white;
+   color: lightgreen;
+   height:150px;
+   border: 1px solid green;
+   padding:5px;
+   margin:20px 0px;
+   box-shadow: 5px 4px 5px 4px;}
+   .box p{text-align: left;
+     font-size: 30px;}  
+ .di {background-color: green;
+border: 2px solid lightgreen;
+width: 70%!important;
+float:right;
+height: 350px;
+  margin: 10px 0px 10px 0px;
+  padding: 10px;}
+ .di:hover {background-color: lightgreen;
+border: 2px solid green;
+float:right;
+height: 350px;
+  width: 70%;
+  margin: 10px 0px 10px 0px;
+  padding: 10px;}
+.Freeplan h1 { font-family: Tahoma;
+ word-spacing: 5px;
+ margin: 10px 0px;
+ text-align: right;
+ letter-spacing: -1px}
+.Freeplan h1:hover{color:white;
+  text-align: right;}
+ .storystory {color: #444;
+   text-align:right;
+   margin: 10px 0px 50px 0px;}
+  .boxbox {background-color: white;
+   color: lightgreen;
+   height: 150px;
+   border: 1px solid green;
+   padding:5px;
+   margin:20px 0px;}
+.boxbox p{text-align: right;
+  font-size: 30px;}
+.premiumplan h1 { font-family: Tahoma;
+margin: 10px 0px;
+ word-spacing: 5px;
+ letter-spacing: -1px}
+ .premiumplan h1:hover { font-family: Tahoma;
+ word-spacing: 5px;
+ color: white;
+ letter-spacing: -1px}
+    .storystorystory {
+     color: #444;
+     margin: 10px 0px 50px 0px;
+   text-align:left;}
+   .boxboxbox {background-color: white;
+   color: lightgreen;
+   border: 1px solid green;
+   padding:5px;
+   height: 150px;
+   margin:5px 0px;
+   box-shadow: 5px 4px 5px 4px;}
+   .boxboxbox p{text-align: left;
+     font-size: 30px;}
+/*css footer start*/
+footer {background-color: black;
+width: 100%;
+margin: 1500px 0px 0px 0px;
+ padding: 40px 300px; 
+  display: inline-block;}
+  footer ul {float: right;}
+  footer ul li {list-style-type: none;
+  padding-right: 10px;
+  float: left;
+  color: white;}
+  
+    #check{
+  z-index: 3;
+  display: none;
+}
+  
+  @media screen and (max-width:560px) { header .headlist {display: none;}
+  
+  header .fa-regular {display: none;}
+  
+    #check:checked ~ header .headlist{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(114, 205, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #check:checked ~  header .headlist a{
+    font-weight: 700;
+    margin-right: 0;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #check:checked ~ header label .fa-regular{
+    z-index: 2;
+    position: fixed;
+    display: block;
+  }
+
+  #check:checked ~ header label .fa-bars{
+    display: none;
+  }
+  
+  label {position: relative;
+float: right;
+cursor: pointer;
+  color: white;
+  font-size: 40px;}
+  
+  .box p, .boxbox p, .boxboxbox p {font-size: 15px;}
+  
+ footer {max-width:500px;
+display:none;}
+ }

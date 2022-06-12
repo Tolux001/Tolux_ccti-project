@@ -1,0 +1,155 @@
+* {box-sizing: border-box;
+padding: 0px;
+height: auto;
+margin: 0px;
+font-family: Arial,Verdana,"Times New Roman",Courier,"Courier New",Georgia,lucida, tahoma,Monospace}
+
+/*css header start*/
+header {background-color: rgb(135, 248, 135);
+margin: 0px;
+padding: 15px;
+max-width: 100%;
+height: 70px;}
+.headicon img {float: left;
+  width: 50px;
+  height: 40px;}
+a {text-decoration: none;}
+ .headlist ul{float: right;
+  padding-top: 10px;}
+.headlist ul li{float: left;
+list-style-type: none;
+padding-right: 20px;
+  font-weight: bold;}
+.headlist ul li a {color:black;}
+.headlist ul li a:hover{color:white;
+border: none;
+text-decoration: none;
+border-bottom: 3px solid white;
+}
+.headlist .linkdiff {color: white;
+background-color: tomato;
+height: auto; 
+font-weight: bold;
+padding: 10px;
+border-radius: 10px;
+transition: 0.4s linear;
+width:50px;}
+.headlist .linkdiff:hover,visited,after {color: tomato;
+background-color: white;
+height: auto; 
+padding: 10px;
+transition: 0.2s ease;
+width:30px;}
+/*css section starts*/
+section {width:100%;
+max-width: 1100px;
+height: 2000px;
+  background-color: honeydew;}
+section h2 {color: red;
+position:relative;
+display:inline-block;
+font-size: 50px;
+font-weight: bold;
+padding:20px 10px 5px 5px;
+font-family: Georgia;}
+section h3 {color: #444;
+display:inline-block;
+position:relative;
+font-weight:bold;
+padding:5px;
+font-family:"Times New Roman";}
+section p { position:relative;
+font-family: verdana;
+font-size:20px
+}
+.fpicture img{ width: 60%;
+float: left;
+height: auto;
+margin: 20px 10px 5px 0px;
+border: 2px solid dodgerblue;
+outline: 2px solid green;}
+.fpicture img:hover {width: 60%;
+float: left;
+height: auto;
+margin: 20px 10px 5px 0px;
+border: 3px solid green;
+outline: 3px solid dodgerblue;}
+.spicture img{ width: 60%;
+float: right;
+height: auto;
+margin: 5px 0px 20px 10px;
+border: 2px solid dodgerblue;
+outline: 2px solid green;}
+.spicture img:hover {width: 60%;
+float: right;
+height: auto;
+margin: 5px 0px 20px 10px;
+border: 3px solid green;
+outline: 3px solid dodgerblue;}
+.fpicture p {text-align: right;
+  margin-bottom: 100px;}
+  .spicture p{text-align:left;}
+.spicture h2{margin: 90px 0px 10px 5px;}
+/*css footer start*/
+footer {background-color: black;
+
+ padding: 40px 400px; 
+  display: inline-block;}
+  footer ul {float: right;}
+  footer ul li {list-style-type: none;
+  padding-right: 10px;
+  float: left;
+  color: white;}
+  
+    #check{
+  z-index: 3;
+  display: none;
+}
+
+@media screen and (max-width:560px) { header .headlist {display: none;}
+  
+  header .fa-regular {display: none;}
+  
+    #check:checked ~ header .headlist{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(114, 205, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #check:checked ~  header .headlist a{
+    font-weight: 700;
+    margin-right: 0;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #check:checked ~ header label .fa-regular{
+    z-index: 2;
+    position: fixed;
+    display: block;
+  }
+
+  #check:checked ~ header label .fa-bars{
+    display: none;
+  }
+  
+  label {position: relative;
+float: right;
+cursor: pointer;
+  color: white;
+  font-size: 40px;}
+  
+footer {max-width:500px;
+display:none;}
+}
